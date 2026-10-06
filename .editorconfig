@@ -1,0 +1,29 @@
+# Indica que este é o arquivo de configuração raiz do projeto
+root = true
+
+# Configurações globais (aplicadas a todos os arquivos)
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Python exige 4 espaços por padrão (PEP 8)
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Arquivos de script e Makefile exigem Tabulação de fato
+[{Makefile,*.mk}]
+indent_style = tab
+
+# Arquivos de documentação Markdown (preserva espaços no final da linha para quebras de linha no render)
+[*.md]
+trim_trailing_whitespace = false
+
+# Arquivos JSON, YAML e de configuração
+[*.{json,yaml,yml}]
+indent_style = space
+indent_size = 2
